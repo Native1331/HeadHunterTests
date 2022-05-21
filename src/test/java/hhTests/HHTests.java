@@ -40,10 +40,8 @@ public class HHTests extends hhTests.TestBase {
 
     @Test
     @DisplayName("Choose a vacancy in my city")
-    void chooseArticle() {
-        zoom(0.2);
-        $(".supernova-navi-item_area-switcher-button").click();
-        $(byLinkText("Санкт-Петербург")).click();
+    void chooseVacancy() {
+        open("https://spb.hh.ru/?customDomain=1");
         $$("ul.multiple-column-list_narrow li").get(11).$("a").click();
         $(".bloko-input").setValue("Тестировщик").pressEnter();
         $(".vacancy-serp-content").shouldHave(text("Тестировщик"));
@@ -52,8 +50,7 @@ public class HHTests extends hhTests.TestBase {
     @Test
     @DisplayName("Select news")
     void selectNews() {
-        zoom(0.2);
-        $(byLinkText("Что такое «сильные стороны» и как их определить")).click();
+        $(byLinkText("Что такое «сильные стороны» и как их определить")).pressEnter();
         $(".cms-header-content ").shouldHave(text("Что такое «сильные стороны» и как их определить"));
     }
 }
