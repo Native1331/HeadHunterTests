@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 @Tag ("hhTests")
-public class HHTests extends hhTests.TestBase {
+public class HHTests extends TestBase {
 
     @Test
     @DisplayName("Open main page")
