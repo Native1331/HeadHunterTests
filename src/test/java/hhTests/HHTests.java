@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-@Tag ("hhTests")
+@Tag("hhTest")
 public class HHTests extends TestBase {
 
     @Test

@@ -27,7 +27,6 @@ public class TestBase {
         String selenoidPassword = config.selenoidPassword();
         String selenoidServer = System.getProperty("selenoid_server", "selenoid.autotests.cloud/wd/hub");
         Configuration.baseUrl = "https://hh.ru";
-        open("https://hh.ru");
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://" + selenoidLogin + ":" + selenoidPassword + "@" +
                 selenoidServer;
