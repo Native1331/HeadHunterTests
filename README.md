@@ -1,5 +1,5 @@
 # Проект по автоматизации тестирования для Head Hunter
-## <a target="_blank" href="https://www.acron.ru/">Веб сайт Acron</a>
+## <a target="_blank" href="https://spb.hh.ru/">Веб сайт Head Hunter</a>
 
 ## :shinto_shrine: Содержание:
 
