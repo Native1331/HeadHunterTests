@@ -8,10 +8,12 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-
+import static com.codeborne.selenide.Selenide.open;
 
 
 public class TestBase {
@@ -23,8 +25,7 @@ public class TestBase {
         String selenoidLogin = config.selenoidLogin();
         String selenoidPassword = config.selenoidPassword();
         String selenoidServer = System.getProperty("selenoid_server","selenoid.autotests.cloud/wd/hub");
-
-        Configuration.baseUrl = "https://spb.hh.ru/";
+       Configuration.baseUrl = "https://spb.hh.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://" + selenoidLogin + ":" + selenoidPassword + "@" +
                 selenoidServer;
@@ -33,6 +34,7 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
     }
+
 
     @AfterEach
     void addAttachments() {
