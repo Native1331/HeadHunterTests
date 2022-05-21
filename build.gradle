@@ -53,7 +53,7 @@ tasks.withType(Test) {
 }
 
 
-task hhTests(type: Test) {
+task hhTests_tests (type: Test) {
     useJUnitPlatform{
         includeTags "hhTests"
     }
