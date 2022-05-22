@@ -1,7 +1,7 @@
-# Проект по автоматизации тестирования для Head Hunter
+# Проект по автоматизации тестирования для Head Hunter:handshake:
 ## <a target="_blank" href="https://spb.hh.ru/">Веб сайт Head Hunter</a>
 
-## :shinto_shrine: Содержание:
+## :clipboard:: Содержание:
 
 - <a href="#shinto_shrine-технологии-и-инструменты">Технологии и инструменты</a> 
 - <a href="#shinto_shrine-реализованные-проверки">Реализованные проверки</a>
@@ -13,7 +13,7 @@
 - <a href="#shinto_shrine-отчет-в-telegram">Отчет в Telegram</a>
 - <a href="#shinto_shrine-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
 
-## :shinto_shrine: Технологии и инструменты
+## :trophy:Технологии и инструменты
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
 <img width="6%" title="Java" src="images/logo/Java.svg">
@@ -27,7 +27,7 @@
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
-## :shinto_shrine: Реализованные проверки
+## :memo::pencil:Реализованные проверки
 - Авторизация в маркете (тесты с PageObjects)
 - Открытие официальных источников в социальных сетях (Параметризированные тесты)
 - Открытие страницы с поиском по сайту
@@ -50,7 +50,7 @@
 - threads (количество потоков)
 - необходимо добавить файл credentials.properties (содержащий в себе логины и пароли, пример в папке resources)
 
-## :shinto_shrine: Запуск из терминала
+## :computer: Запуск из терминала
 Локальный запуск:
 ```
 gradle clean test
@@ -61,12 +61,10 @@ gradle clean test
 clean
 test
 -Dbrowser=${BROWSER}
--Dversion=${VERSION}
 -Dsize=${BROWSER_SIZE}
--Dthreads=${THREADS}
 ```
 
-## :shinto_shrine: Allure отчет
+## :chart_with_downwards_trend: Allure отчет
 - ### Главный экран отчета
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screenshots/allure-main-page.png">
@@ -77,7 +75,7 @@ test
 <img title="Allure Test Page" src="images/screenshots/allure-test-page.png">
 </p>
 
-## :shinto_shrine: Интеграция с Allure TestOps
+## :bar_chart: Интеграция с Allure TestOps
 - ### Экран с результатами запуска тестов
 <p align="center">
 <img title="TestOps Launch Page" src="images/screenshots/test-ops-launch-page.png">
@@ -88,18 +86,18 @@ test
 <img title="TestOps tests page" src="images/screenshots/test-ops-tests-page.png">
 </p>
 
-## :shinto_shrine: Интеграция с Jira
+## :chart_with_upwards_trend:	 Интеграция с Jira
 - ### Страница с задачей в Jira
 <p align="center">
 <img title="Jira issue" src="images/screenshots/jira-issue.png">
 </p>
 
-## :shinto_shrine: Отчет в Telegram
+## 	:iphone: Отчет в Telegram
 <p align="center">
 <img title="Telegram notification message" src="images/screenshots/telegram-notification.png">
 </p>
 
-## :shinto_shrine: Видео примеры прохождения тестов
+## :movie_camera: Видео примеры прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
   <img title="Selenoid Video" src="images/gif/test-run.gif">
