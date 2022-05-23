@@ -16,20 +16,30 @@
 - <a href="#movie_camera-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
 
 ## :trophy:Технологии и инструменты
-![Intelij_IDEA] (design/icons/Intelij_IDEA.png)
-![AllureTestOps] (design/icons/AllureTestOps.png)
-                                                                                                         
-  Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure TestOps Telegram Jira
-
+                                                                                                        
 ![This is an image](/design/icons/Java.png)![This is an image](/design/icons/Gradle.png)![This is an image](/design/icons/Intelij_IDEA.png)![This is an image](/design/icons/Selenide.png)![This is an image](/design/icons/Selenoid.png)![This is an image](/design/icons/JUnit5.png)![This is an image](/design/icons/Jenkins.png)![This is an image](/design/icons/Allure_Report.png)![This is an image](/design/icons/AllureTestOps.png)![This is an image](/design/icons/Telegram.png)![This is an image](/design/icons/Jira.png)</br>
 
+В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI-тестов.
 
-## 	:heavy_check_mark: Реализованные проверки
-Раздела "Сервисы для соискателей на главной странице
-Выбора города (на примере Санкт-Петербурга)
-Поиск вакансий Тестировщик"
-Поиск вакансии "Тестировщик" в городе Санкт-Петербург
-Поиск и переход на страницу статьи "Что такое сильные стороны и как их определить?"
+ В качестве библиотеки для модульного тестирования используется <code>JUnit 5</code>.
+ 
+ Для автоматизированной сборки проекта используется <code>Gradle</code>.
+ 
+ <code>Selenoid</code> выполняет запуск браузеров в контейнерах <code>Docker</code>.
+
+ <code>Allure Report</code> формирует отчет о запуске тестов.
+
+ <code>Jenkins</code> выполняет запуск тестов.
+ 
+ После завершения прогона отправляются уведомления с помощью бота в <code>Telegram</code>.
+
+
+## 	:heavy_check_mark: Реализованные проверки</br>
+Наличия раздела "Сервисы для соискателей" на главной странице</br>
+Выбора города (на примере Санкт-Петербурга)</br>
+Поиск вакансий "Тестировщик"</br>
+Поиск вакансии "Тестировщик" в городе Санкт-Петербург</br>
+Поиск и переход на страницу статьи "Что такое сильные стороны и как их определить?"</br>
 
 ## :clipboard: Сборка в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/AUTO-1024/">Сборка в Jenkins</a>
