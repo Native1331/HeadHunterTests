@@ -63,21 +63,21 @@ test
 ## :chart_with_downwards_trend: Allure отчет
 - ### Главный экран отчета
 
- ![This is an image](design/pictures/allureReport.jpeg)
+ ![This is an image](design/pictures/allure.jpeg)
 
 
 - ### Страница с проведенными тестами
 
-![This is an image](design/pictures/allureReport1.jpeg)
+![This is an image](design/pictures/allure (2).jpeg)
 
 ## :bar_chart: Интеграция с Allure TestOps
 - ### Экран с результатами запуска тестов
                                                                             
-![This is an image](design/pictures/allureTestOps.jpeg)
+![This is an image](design/pictures/allureTestsOp.jpeg)
 
 - ### Страница с тестами в TestOps
 
-![This is an image](design/pictures/allureTestOps1.jpeg)
+![This is an image](design/pictures/AllureTestOps.jpeg)
                                                                             
 ## :chart_with_upwards_trend:	 Интеграция с Jira
 - ### Страница с задачей в Jira
@@ -93,8 +93,9 @@ test
 ## :movie_camera: Видео примеры прохождения тестов
 
 
+https://user-images.githubusercontent.com/83497921/169890250-97fef0ce-e046-4e11-ad2f-823873ced6b7.mp4
 
-https://user-images.githubusercontent.com/83497921/169714032-3b6d17f6-c509-4f1c-8b71-8cbed0ab368c.mp4
+
 
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
