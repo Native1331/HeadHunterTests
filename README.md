@@ -63,21 +63,21 @@ test
 ## :chart_with_downwards_trend: Allure отчет
 - ### Главный экран отчета
 
- ![This is an image](design/pictures/allureReport.jpeg)
+ ![This is an image](design/pictures/allure.jpeg)
 
 
 - ### Страница с проведенными тестами
 
-![This is an image](design/pictures/allureReport1.jpeg)
+![This is an image](design/pictures/allure (2).jpeg)
 
 ## :bar_chart: Интеграция с Allure TestOps
 - ### Экран с результатами запуска тестов
                                                                             
-![This is an image](design/pictures/allureTestOps.jpeg)
+![This is an image](design/pictures/allureTestsOp.jpeg)
 
 - ### Страница с тестами в TestOps
 
-![This is an image](design/pictures/allureTestOps1.jpeg)
+![This is an image](design/pictures/AllureTestOps.jpeg)
                                                                             
 ## :chart_with_upwards_trend:	 Интеграция с Jira
 - ### Страница с задачей в Jira
