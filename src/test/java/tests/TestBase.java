@@ -8,24 +8,21 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.open;
+
 
 
 public class TestBase {
 
     @BeforeAll
-    static void setUp() {
+     static void setUp() throws Exception {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
         String selenoidLogin = config.selenoidLogin();
         String selenoidPassword = config.selenoidPassword();
         String selenoidServer = System.getProperty("selenoid_server","selenoid.autotests.cloud/wd/hub");
-       Configuration.baseUrl = "https://spb.hh.ru/";
+        Configuration.baseUrl = "https://hh.ru";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://" + selenoidLogin + ":" + selenoidPassword + "@" +
                 selenoidServer;
@@ -33,7 +30,7 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-    }
+            }
 
 
     @AfterEach
@@ -43,7 +40,7 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
         closeWebDriver();
-    }
+            }
 }
 
 
