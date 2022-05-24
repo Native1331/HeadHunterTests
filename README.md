@@ -78,7 +78,7 @@ test
 
 - ### Страница с проведенными тестами
 
-![This is an image](design/pictures/allure (2).jpeg)
+![This is an image](design/pictures/allure1.jpeg)
 
 ## :bar_chart: Интеграция с Allure TestOps
 - ### Экран с результатами запуска тестов
