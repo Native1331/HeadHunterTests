@@ -56,8 +56,8 @@ tasks.withType(Test) {
 
 
 
-task hhTests_tests (type: Test) {
+task tutuRuTests_tests (type: Test) {
     useJUnitPlatform{
-        includeTags "hhTests"
+        includeTags "tutuRuTests"
     }
 }

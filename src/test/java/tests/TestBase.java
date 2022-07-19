@@ -23,7 +23,7 @@ public class TestBase {
         String selenoidLogin = config.selenoidLogin();
         String selenoidPassword = config.selenoidPassword();
         String selenoidServer = System.getProperty("selenoid_server","selenoid.autotests.cloud/wd/hub");
-        Configuration.baseUrl = "https://hh.ru";
+        Configuration.baseUrl = "https://www.tutu.ru";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://" + selenoidLogin + ":" + selenoidPassword + "@" +
                 selenoidServer;
@@ -34,7 +34,7 @@ public class TestBase {
             }
     @BeforeEach
     void  openBaseUrl() {
-        open("https://hh.ru");
+        open("https://www.tutu.ru");
     }
 
     @AfterEach
