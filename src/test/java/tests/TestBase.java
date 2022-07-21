@@ -1,6 +1,4 @@
 package tests;
-
-
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.CredentialsConfig;
@@ -22,8 +20,8 @@ public class TestBase {
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
         String selenoidLogin = config.selenoidLogin();
         String selenoidPassword = config.selenoidPassword();
-        String selenoidServer = System.getProperty("selenoid_server","selenoid.autotests.cloud/wd/hub");
-        Configuration.baseUrl = "https://www.tutu.ru/";
+        String selenoidServer = System.getProperty("selenoid_server", "selenoid.autotests.cloud/wd/hub");
+        Configuration.baseUrl = "www.tutu.ru";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://" + selenoidLogin + ":" + selenoidPassword + "@" +
                 selenoidServer;
@@ -31,13 +29,13 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.pageLoadTimeout=(7000);
-    }
-    @BeforeEach
-    void  openBaseUrl() {
-        open("https://www.tutu.ru/");
+        Configuration.pageLoadTimeout = (600000);
     }
 
+    @BeforeEach
+    void openBaseUrl() {
+        open();
+    }
     @AfterEach
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
