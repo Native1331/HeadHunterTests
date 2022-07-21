@@ -14,17 +14,16 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
-
+@Tag("tutuRuTests")
 public class MainPageTests extends TestBase {
 
 
-    @Tag("tutuRuTests")
     @ValueSource(strings = {
             "Санкт-Петербург",
             "Москва"
     })
     @ParameterizedTest(name = "Search tickets from different cities{0}")
-    void chooseAviaIickets(String testData) {
+    void chooseFlightIickets(String testData) {
         $(byName("city_from")).val(testData);
         $$(".wrapper").get(0).click();
         $(byName("city_to")).val("Москва");
@@ -36,40 +35,42 @@ public class MainPageTests extends TestBase {
                 .shouldBe(visible);
     }
 
-
-    @Test
-    @Tag("TutuRuTests")
-    @DisplayName("Find railway tickets")
+    @ValueSource(strings = {
+            "Симферополь",
+            "Севастополь"
+    })
+    @ParameterizedTest(name= "Find railway tickets {0}")
     void chooseTrainTickets() {
         step("Find  ticket", () -> {
             $(".tab_train").click();
-            $(byName("schedule_station_from")).val("Симферополь");
+            $(byName("schedule_station_from")).val("testData");
             $("li:nth-child(1) > .list_item").click();
             $(byName("schedule_station_to")).click();
             $(byName("schedule_station_to")).val("Анап").click();
             $$(".j-city_from_suggest_container").get(1).click();
             $(".j-date_to").val("01.08.2022").pressEnter();
-            $("._68Sr6IM8-eKoi8iow9l1e").shouldHave(text("Симферополь"));
+            $("._68Sr6IM8-eKoi8iow9l1e").shouldHave(text("testData"));
 
         });
     }
 
-    @Test
-    @Tag("TutuRuTests")
-    @DisplayName("Find ElectricTrain tickets")
+    @ValueSource(strings = {
+            "Санкт-Петербург",
+            "Татьянино"
+    })
+    @ParameterizedTest(name="Find ElectricTrain tickets {0}")
     void chooseElectricTrainIickets() {
         $(".tab_etrain").click();
-        $(byName("st1")).val("Санкт-Петербург");
+        $(byName("st1")).val("testData");
         $("li:nth-child(1) > .list_item").click();
         $(byName("st2")).val("Зеленого");
         $$(".j-city_from_suggest_container").get(1).click();
         $$(".j-date_to").get(1).val("01.08.2022").pressEnter();
-        $(".b-etrain__schedule_title").shouldHave(text("Зеленогорск"));
+        $(".b-etrain__schedule_title").shouldHave(text("testData"));
     }
 
 
     @Test
-    @Tag("TutuRuTests")
     @DisplayName("Find a tour")
     void lookingForATour() {
         $(byLinkText("Туры")).click();
@@ -84,11 +85,10 @@ public class MainPageTests extends TestBase {
         $$(".DayPicker-Day").get(1).click();
         $$(".c02549").get(0).click();
         $(".c02577").click();
-        $(".j-tours_container_content").shouldHave(text("Мальдивы"));
+        $(".error_text").shouldHave(text("Мальдивы"));
     }
 
     @Test
-    @Tag("TutuRuTests")
     @DisplayName("Find all adventures in Russia")
     void findAdventure() {
         $(byText("Приключения")).click();
@@ -98,7 +98,6 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("TutuRuTests")
     @DisplayName("Look the shedule of Aeroexpress")
     void findTheSheduleOfAeroexpress() {
         $(".tab_aeroexpress").click();
