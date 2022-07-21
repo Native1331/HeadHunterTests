@@ -11,11 +11,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
-    private static String browserVersion;
 
     @BeforeAll
     static void setUp() throws Exception {
@@ -33,12 +33,12 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-     //   Configuration.pageLoadTimeout = (600000);
+        Configuration.pageLoadTimeout = (300000);
     }
 
     @BeforeEach
     void openBaseUrl() {
-        open();
+        open(baseUrl);
     }
 
     @AfterEach
