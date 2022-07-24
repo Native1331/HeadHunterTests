@@ -70,9 +70,9 @@ tasks.withType(Test) {
     }
 }
 
- task "TutuRuTests"(type:Test) {
+ task "hhTests"(type:Test) {
  useJUnitPlatform{
- includeTags "TutuRuTests"
+ includeTags "hhTests"
             }
 
 }
