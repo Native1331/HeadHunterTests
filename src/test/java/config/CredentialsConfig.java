@@ -6,9 +6,4 @@ import org.aeonbits.owner.Config;
         String selenoidLogin();
         String selenoidPassword();
         String url();
-
-
 }
-
-
-
