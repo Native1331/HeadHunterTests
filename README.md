@@ -72,37 +72,41 @@ test
 ## :chart_with_downwards_trend: Allure отчет
 - ### Главный экран отчета
 
- ![This is an image](design/pictures/allure.jpeg)
+ ![This is an image](design/pictures/Allure.jpeg)
 
 
 - ### Страница с проведенными тестами
 
-![This is an image](design/pictures/allure1.jpeg)
+![This is an image](design/pictures/Allure1.jpeg)
 
 ## :bar_chart: Интеграция с Allure TestOps
 - ### Экран с результатами запуска тестов
                                                                             
-![This is an image](design/pictures/allureTestsOp.jpeg)
+![This is an image](design/pictures/AllureTestsOps.jpeg)
 
 - ### Страница с тестами в TestOps
 
-![This is an image](design/pictures/AllureTestOps.jpeg)
+![This is an image](design/pictures/AllureTestOps1.jpeg)
                                                                             
 ## :chart_with_upwards_trend:	 Интеграция с Jira
 - ### Страница с задачей в Jira
                                                                                 
- ![This is an image](design/pictures/jira.jpeg)
+ ![This is an image](design/pictures/Jira.jpeg)
 
 
 ## 	:iphone: Отчет в Telegram
 
- ![This is an image](design/pictures/telegram.jpeg)
+ ![This is an image](design/pictures/Telegram.jpeg)
 
 
 ## :movie_camera: Видео примеры прохождения тестов
 
 
-https://user-images.githubusercontent.com/83497921/169890250-97fef0ce-e046-4e11-ad2f-823873ced6b7.mp4
+
+
+
+
+https://user-images.githubusercontent.com/83497921/180842190-123c8f3d-a1af-4363-aa5b-ef48283e3013.mp4
 
 
 
