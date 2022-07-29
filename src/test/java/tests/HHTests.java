@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selenide.*;
 
  @Tag("hhTests")
- public class HHTests extends TestBase {
+ public class openWebsiteAndChooseTownTests extends TestBase {
  @Test
  void openMainPage() {
       open();
