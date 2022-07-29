@@ -15,6 +15,7 @@ public class ParametrizedTests extends TestBase {
 
     @ParameterizedTest(name = "Поиск вакансий по словам{0}")
     void searchVacancies(String vacancy) {
+        open();
         $(".bloko-input_scale-large").setValue(vacancy);
         $(".bloko-button_stretched").submit();
         $(".vacancy-serp-content").shouldHave(text(vacancy));
@@ -27,6 +28,7 @@ public class ParametrizedTests extends TestBase {
     
     @ParameterizedTest(name = "Проверка поиска вакансий по словам{0}, ожидаем результат{1}")
     void chooseAVacancyInMyTown(String vacancy, String expectedText) {
+        open();
         $(".bloko-input_scale-large").setValue(vacancy);
         $(".bloko-button_stretched").submit();
         $(".vacancy-serp-content").shouldHave(text(expectedText));
