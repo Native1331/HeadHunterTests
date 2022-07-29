@@ -9,12 +9,14 @@ import static com.codeborne.selenide.Selenide.*;
  public class HHTests extends TestBase {
  @Test
  void openMainPage() {
+      open();
       $(".supernova-icon-services-dynamic").click();
       $(".supernova-overlay__content").shouldHave(text("Сервисы для соискателей"));
    }
 
  @Test
  void choseTown() {
+      open();
       $(".supernova-navi-item_area-switcher-button").click();
       $(byLinkText("Санкт-Петербург")).click();
       $(".supernova-navi").shouldHave(text("Санкт-Петербург"));        }
